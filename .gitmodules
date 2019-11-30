@@ -1,12 +1,4 @@
-[submodule "model"]
-	path = model
+[submodule "models"]
+	path = models
 	url = git@github.com:tongzcomradez/sub-module.git
-	branch = master
-[submodule "sub-module-2"]
-	path = sub-module-2
-	url = git@github.com:tongzcomradez/sub-module-2.git
-	branch = master
-[submodule "utils"]
-	path = utils
-	url = git@github.com:tongzcomradez/sub-module-2.git
 	branch = master
