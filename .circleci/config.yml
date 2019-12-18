@@ -1,11 +1,10 @@
 init_submodule: &init_submodule
   name: apply_deployment
   command: |
-    rm -f pod.yaml
-    sed "s~ARG_CIRCLE_TAG~${CIRCLE_TAG}~; s~ARG_NAMESPACE~${NAMESPACE}~; s~ARG_CORE_HOST~${CORE_HOST}~; " ./pod.template.yaml > pod.yaml
-    cat pod.yaml
-    kubectl delete -f pod.yaml
-    kubectl create -f pod.yaml
+    ls
+    git submodule init
+    git submodule update
+    ls models
 
 version: 2.1
 jobs:
