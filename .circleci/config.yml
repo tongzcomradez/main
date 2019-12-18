@@ -12,6 +12,8 @@ jobs:
     machine: true
     steps:
       - checkout
+      - add_ssh_keys: # machine user
+          fingerprints: "71:49:79:ec:2e:08:3e:b9:c3:e6:79:17:52:b9:68:b5"
       - run: *init_submodule
 
 workflows:
